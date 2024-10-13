@@ -1,0 +1,115 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #ff007f; /* Attractive pink color */
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-box, .dropdown {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+.dropdown{
+    margin-left: 25%;
+    width: 60%;
+}
+
+.input-box:focus, .dropdown:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #ff007f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6006f;
+}
+
+#array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+    padding: 15px;
+    background-color: #f0f0f5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.bar {
+    background-color: #03dac6;
+    margin: 0 2px;
+    width: 15px;
+    transition: height 0.4s ease, background-color 0.3s ease;
+    max-height: 100%; /* Prevents bars from exceeding container height */
+}
+
+.sorted {
+    background-color: #018786 !important;
+}
+
+.sorted-output {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+span {
+    font-weight: 600;
+    color: #6200ea;
+}

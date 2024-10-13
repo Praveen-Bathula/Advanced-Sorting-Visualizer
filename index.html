@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Sorting Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Visualizer</h1>
+        <div class="controls">
+            <div class="input-group">
+                <input type="text" id="array-input" placeholder="Enter numbers (e.g. 34, 67, 12)" class="input-box">
+            </div>
+
+            <div class="input-group">
+                <select id="sort-algorithm" class="dropdown">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <button id="sort-button" class="btn-primary">Start Sorting</button>
+            </div>
+        </div>
+
+        <div id="array-container"></div>
+        <p class="sorted-output">Sorted Array: <span id="sorted-numbers"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
